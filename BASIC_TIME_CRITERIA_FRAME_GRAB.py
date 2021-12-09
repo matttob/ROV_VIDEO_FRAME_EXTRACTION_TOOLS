@@ -25,8 +25,7 @@ frame_rate=cap.get(cv2.CAP_PROP_FPS)
 start_frame=math.floor((args.start_time_mins*60*frame_rate)+(args.start_time_secs*frame_rate))
 end_frame=math.floor((args.end_time_mins*60*frame_rate)+(args.end_time_secs*frame_rate))
 
-# Loop through specified frames currently I like being able to specify specific start and end points as well as image grab frequency
-#but this could definitelu to be changed to be realitve to the timing of the footage and frame rate of footage to make more user friendly
+# Loop through specified frames 
 for i in range(start_frame, end_frame, args.frame_interval):
     
     # choose specified frame
